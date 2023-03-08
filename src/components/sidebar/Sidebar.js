@@ -1,7 +1,11 @@
 import React from "react";
 import LOGO from "../../assets/images/logo.png";
-import "./sidebar.scss";
 import { Autocomplete, Box, Button, TextField } from "@mui/material";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
+import { DatePicker } from "@mui/x-date-pickers/DatePicker";
+
+import "./sidebar.scss";
 const sidebar = () => {
 	const top100Films = [
 		{ label: "The Shawshank Redemption", year: 1994 },
@@ -62,6 +66,14 @@ const sidebar = () => {
 					sx={{ width: "25ch" }}
 					size="small"
 				/>
+
+				<Box>
+					<LocalizationProvider dateAdapter={AdapterDayjs}>
+						<DatePicker label="From Date" onChange={date => console.log(date)} />
+						<DatePicker label="To Date" onChange={date => console.log(date)} />
+					</LocalizationProvider>
+				</Box>
+
 				<Box className="actions">
 					<Button>search</Button>
 					<Button color="error">reset</Button>
