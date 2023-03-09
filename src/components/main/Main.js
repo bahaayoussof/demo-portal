@@ -1,16 +1,14 @@
-import React from 'react'
+import React from "react";
 import Sidebar from "../sidebar/Sidebar";
 
-import './main.scss'
+import "./main.scss";
 const Main = () => {
-  return (
+	return (
 		<div className="main">
-      <Sidebar />
-      <div className="mainContainer">
-        main
-      </div>
+			<Sidebar />
+			<div className="mainContainer">main</div>
 		</div>
 	);
-}
+};
 
-export default Main
+export default Main;

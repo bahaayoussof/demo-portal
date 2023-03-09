@@ -29,6 +29,9 @@ const theme = createTheme({
 		},
 		text: {
 			primary: "rgba(18, 18, 18, 0.87)",
+			blue: "#343E6E",
+			white: "#FFF",
+			orange: "#F15931",
 		},
 		// action: {
 		//   focus: {
@@ -122,6 +125,14 @@ const theme = createTheme({
 				root: {
 					width: "27ch",
 					margin: "7px",
+				},
+			},
+		},
+
+		MuiLink: {
+			styleOverrides: {
+				root: {
+					color: "#343E6E",
 				},
 			},
 		},

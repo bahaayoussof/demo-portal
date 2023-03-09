@@ -1,0 +1,43 @@
+.navbar {
+	height: 60px;
+
+	.toolbar {
+		display: flex;
+		flex: 1;
+
+		.logo {
+			flex: 2;
+			margin-left: 5rem;
+			.img {
+				width: 150px;
+			}
+		}
+
+		.navContainer {
+			justify-content: space-evenly;
+			font-variant: small-caps;
+			font-size: 1.25rem;
+			font-weight: bold;
+
+			.a {
+				font-weight: bold;
+				&:hover {
+					color: #f15931;
+					transition: all 0.3s ease-in-out;
+				}
+
+				&:active {
+					background-color: #dcdfed;
+					color: #343e6e;
+					padding: 7px 15px;
+					border-radius: 5px;
+					font-weight: 500;
+				}
+			}
+		}
+
+		.extra {
+			flex: 2;
+		}
+	}
+}
