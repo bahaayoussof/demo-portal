@@ -1,4 +1,5 @@
 import { Box, Stack } from "@mui/material";
+import { Route, Routes } from "react-router";
 import Main from "./components/main/Main";
 import Navbar from "./components/navbar/Navbar";
 
@@ -7,7 +8,9 @@ function App() {
 		<Box bgcolor={"background.default"} color={"text.primary"}>
 			<Navbar />
 			<Stack direction="row" spacing={2}>
-				<Main />
+				<Routes>
+					<Route path="/" element={<Main />} />
+				</Routes>
 			</Stack>
 		</Box>
 	);
