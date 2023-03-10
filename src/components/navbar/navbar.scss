@@ -1,5 +1,5 @@
 .navbar {
-	height: 60px;
+	// mi: 60px;
 
 	.toolbar {
 		display: flex;
@@ -8,8 +8,10 @@
 		.logo {
 			flex: 2;
 			margin-left: 5rem;
-			.img {
-				width: 150px;
+			
+      img {
+				width: 90px;
+        margin-top: -10px;
 			}
 		}
 
@@ -19,7 +21,8 @@
 
 			.navlink {
 				padding: 7px 15px;
-
+        margin-top: -15px;
+        
 				&:hover {
 					color: #f15931;
 					transition: all 0.3s ease-in-out;

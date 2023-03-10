@@ -1,4 +1,4 @@
-import { AppBar, Box, Link, Toolbar } from "@mui/material";
+import { AppBar, Box, Toolbar } from "@mui/material";
 import React from "react";
 import LOGO from "../../assets/images/logo.png";
 import { NavLink } from "react-router-dom";
@@ -17,10 +17,6 @@ const Navbar = () => {
 						sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}
 						className="navContainer"
 					>
-						{/* <Link href="/transactions">transactions</Link>
-						<Link href="/users">users</Link>
-						<Link href="/ffa-portal">ffa portal</Link> */}
-
 						<NavLink className="navlink" to={"/"}>
 							Transactions
 						</NavLink>

@@ -25,10 +25,9 @@ const theme = createTheme({
 		info: {
 			main: "#121212",
 			light: "#121212",
-			// light:""
 		},
 		text: {
-			primary: "rgba(18, 18, 18, 0.87)",
+			primary: "#121212dd",
 			blue: "#343E6E",
 			white: "#FFF",
 			orange: "#F15931",
@@ -126,6 +125,15 @@ const theme = createTheme({
 					width: "27ch",
 					margin: "7px",
 				},
+			},
+		},
+
+		MuiAppBar: {
+			styleOverrides: {
+				root: {
+					height: "50px",
+				},
+				
 			},
 		},
 
