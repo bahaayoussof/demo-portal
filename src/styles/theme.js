@@ -7,7 +7,7 @@ const theme = createTheme({
 			light: "#E7F4F9",
 		},
 		secondary: {
-			main: "#FFF",
+			main: "#F15931",
 			// main: "#8ECCE1",
 		},
 		error: {
@@ -119,6 +119,23 @@ const theme = createTheme({
 			},
 		},
 
+		MuiTab: {
+			styleOverrides: {
+				root: {
+					textTransform: "capitalize",
+					padding: "0 35px",
+					borderRadius: "5px",
+          minHeight: 35,
+
+					"&.Mui-selected": {
+						backgroundColor: "#343E6E",
+						color: "#FFF",
+						transition: "all 0.3s ease-in-out",
+					},
+				},
+			},
+		},
+
 		MuiTextField: {
 			styleOverrides: {
 				root: {
@@ -133,7 +150,6 @@ const theme = createTheme({
 				root: {
 					height: "50px",
 				},
-				
 			},
 		},
 

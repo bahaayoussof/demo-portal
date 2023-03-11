@@ -4,6 +4,7 @@ import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 import dayjs from "dayjs";
+import { LogoutRounded } from "@mui/icons-material";
 
 import "./sidebar.scss";
 const sidebar = props => {
@@ -31,6 +32,7 @@ const sidebar = props => {
 					autoComplete="off"
 					onSubmit={e => {
 						e.preventDefault();
+						console.log("submit!");
 					}}
 				>
 					<TextField name="op_number" id="outlined-required" label="Operation Number" />
@@ -69,14 +71,18 @@ const sidebar = props => {
 						<Button color="error" onClick={() => console.log("reset!")}>
 							reset
 						</Button>
-						<Button onClick={() => console.log("search!")}>search</Button>
+						<Button type="submit">search</Button>
 					</Box>
 				</Box>
 			</Box>
 			<Box className="bottom">
 				<Box className="actions">
 					<Button onClick={() => console.log("Change Password!")}>Change Password</Button>
-					<Button color="error" onClick={() => console.log("logout!")}>
+					<Button
+						color="error"
+						endIcon={<LogoutRounded />}
+						onClick={() => console.log("logout!")}
+					>
 						Logout
 					</Button>
 				</Box>
