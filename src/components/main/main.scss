@@ -5,26 +5,27 @@
 	.mainContainer {
 		flex: 6;
 		padding: 10px 5px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
 
 		.mainHeader {
 			flex: 1;
 			display: flex;
-			background-color: #eee;
-      padding: 0 10px;
+			// background-color: #eee;
+			padding: 0 10px;
 
-      .actions {
-        display: flex;
-        align-items: center;
-      }
+			.actions {
+				display: flex;
+				align-items: center;
+			}
 		}
 
 		.mainBody {
 			flex: 16;
 			height: calc(100vh - 120px);
-			background-color: #eee;
+			width: calc(100vw - 300px);
+			// background-color: #eee;
 		}
 	}
 }

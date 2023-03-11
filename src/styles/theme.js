@@ -37,6 +37,13 @@ const theme = createTheme({
 		//     borderBlockColor: "#8ECCE1",
 		//   },
 		// },
+		overrides: {
+			MuiAppBar: {
+				root: {
+					"box-shadow": "none",
+				},
+			},
+		},
 	},
 	shape: {
 		borderRadius: 8,
@@ -98,12 +105,26 @@ const theme = createTheme({
 				},
 			},
 		},
+
+		MuiDataGrid: {
+			styleOverrides: {
+				root: {
+					"& .MuiDataGrid-columnHeader:focus": {
+						outline: "none",
+					},
+					"& .MuiDataGrid-cell:focus-within": {
+						outline: "none",
+					},
+				},
+			},
+		},
+
 		MuiListItemButton: {
 			styleOverrides: {
 				root: {
 					"&.Mui-selected": {
-						backgroundColor: "#343E6E !important",
-						borderRadius: "5px !important",
+						backgroundColor: "#343E6E",
+						borderRadius: "5px",
 						color: "#FFF",
 					},
 				},
@@ -125,7 +146,7 @@ const theme = createTheme({
 					textTransform: "capitalize",
 					padding: "0 35px",
 					borderRadius: "5px",
-          minHeight: 35,
+					minHeight: 35,
 
 					"&.Mui-selected": {
 						backgroundColor: "#343E6E",

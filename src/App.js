@@ -9,8 +9,11 @@ function App() {
 		<Box bgcolor={"background.default"} color={"text.primary"} className="app">
 			<Navbar />
 			<Stack direction="row" spacing={2} className="appContainer">
-				<Routes>
-					<Route path="/" element={<Main />} />
+				<Routes path="/">
+					<Route index element={<Main />} />
+					<Route path="transactions" element={<Main />} />
+					<Route path="users" element={<Main />} />
+					<Route path="ffa-portal" element={<Main />} />
 				</Routes>
 			</Stack>
 		</Box>

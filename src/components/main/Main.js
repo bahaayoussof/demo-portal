@@ -3,6 +3,7 @@ import { Box, Button } from "@mui/material";
 import React from "react";
 import Sidebar from "../sidebar/Sidebar";
 import CustomTabs from "../tabs/Tabs";
+import DataTable from "../dataTable/DataTable";
 
 import "./main.scss";
 const Main = () => {
@@ -26,7 +27,8 @@ const Main = () => {
 						</Button>
 					</Box>
 				</Box>
-        <Box className="mainBody">
+				<Box className="mainBody">
+					<DataTable />
 				</Box>
 			</Box>
 		</div>
